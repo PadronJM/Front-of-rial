@@ -34,22 +34,45 @@
            <img src="img/person-24px.svg" alt="15px" class="person">
     </div> 
       <form class="credentials">
-        <div class="group">      
-          <input type="user" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>User</label>
+          <div class="primary">
+            <div class="group">      
+                <input type="user" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>User*</label>
+            </div>
+            <div class="group">      
+                <input type="name" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Name*</label>
+            </div>
+            <div class="group">      
+                <input type="name" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Last Name*</label>
+            </div>
         </div>
-        <div class="group">      
-          <input type="password" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Password</label>
+        <div class="secundary">
+            <div class="group">      
+                <input type="email" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Email</label>
+                </div>
+            <div class="group">      
+                <input type="password" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Password</label>
+            </div>
+
+            <button class="mdc-button">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">Iniciar Sesion</span>
+            </button>
         </div>
-        <button class="mdc-button">
-          <div class="mdc-button__ripple"></div>
-          <span class="mdc-button__label">Iniciar Sesion</span>
-        </button>
   </div>
 </body>
 </html>

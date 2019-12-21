@@ -96,6 +96,7 @@ ol {
 .spad {
 	padding-top: 100px;
 	padding-bottom: 90px;
+	background-color: #fff;
 }
 
 .section-title {
@@ -227,6 +228,9 @@ a.site-btn {
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
+}
+img.Logo {
+    height: 100px;
 }
 
 /* Preloder */
@@ -402,6 +406,7 @@ a.site-btn {
 
 .about-section .container {
 	position: relative;
+	background-color: #fff;
 }
 
 .about-text h2 {
@@ -1821,132 +1826,284 @@ a.site-btn {
 	}
 }
 /* LOGIN */
-.login-box {
-    margin-top: 75px;
-    height: auto;
-    background:#2eb2ff;
-    text-align: center;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	border-radius: 10px;
+html, body {
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: hsl(202, 69%, 49%);
 }
-
-.login-key {
-    height: 100px;
-    font-size: 80px;
-    line-height: 100px;
-    background: -webkit-linear-gradient(#27EF9F, #0DB8DE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.login-title {
-	margin-top: 15px;
-	text-align: center;
-	letter-spacing: 2px;
-	margin-top: 10px;
-}
-
-.login-form {
-    margin-top: 25px;
-    text-align: left;
-}
-
-input[type=text] {
-    background-color: #ffffff;
-    border: none;
-    border-bottom: 2px solid #0DB8DE;
-    border-top: 0px;
-    border-radius: 0px;
-    font-weight: bold;
-    outline: 0;
-    margin-bottom: 20px;
-    padding-left: 0px;
-    color: #ECF0F5;
-}
-
-input[type=password] {
-    background-color: #ffffff;
-    border: none;
-    border-bottom: 2px solid #0DB8DE;
-    border-top: 0px;
-    border-radius: 0px;
-    font-weight: bold;
-    outline: 0;
-    padding-left: 0px;
-    margin-bottom: 20px;
-    color: #ECF0F5;
-}
-
-.form-group {
-    margin-bottom: 40px;
-    outline: 0px;
-}
-
-.form-control:focus {
-    border-color: inherit;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-bottom: 2px solid #0DB8DE;
-    outline: 0;
-    background-color: #1A2226;
-    color: #ECF0F5;
-}
-
-input:focus {
-    outline: none;
-    box-shadow: 0 0 0;
-}
-
-label {
-    margin-bottom: 0px;
-}
-
-.form-control-label {
-    font-size: 10px;
-    color: #050606;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.btn-outline-primary {
-	color: #050606;
-    border-radius: 0px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.btn-outline-primary:hover {
-    background-color: #0DB8DE;
-    right: 0px;
-}
-
-.login-btm {
-    float: left;
-}
-
-.login-button {
-    padding-right: 0px;
-    text-align: right;
-    margin-bottom: 25px;
-}
-
-.login-text {
-    text-align: left;
-    padding-left: 0px;
-    color: #A2A4A4;
-}
-
-.loginbttm {
-    padding: 0px;
-}
-
-.img-login{
-    width: 50%;
+.container.login {
     position: relative;
-    display: initial;
+    display: block;
+    width: 30%;
+    height: 70%;
+    top: 100px;
+    border: solid;
+    border-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 4px #aba6a6;
+    background-color: #fff;
 }
-img.avatar {
-    zoom: 10;
-    margin-top: -14px;
+.avatar {
+    position: relative;
+    display: flex;
+    border: solid;
+	border-radius: 100px;
+	margin-left: 30%;
+	margin-right: 30%;
+	top: 30px;
+}
+img.person {
+    position: relative;
+    display: flex;
+    height: 142px;
+}
+form.credentials {
+    position: relative;
+    top: 60px;
+    left: 40px;
+}
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+/* button */
+@import "@material/button/mdc-button";
+button.mdc-button {
+    position: relative;
+    left: 230px;
+}
+/* REGISTER */
+html, body {
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: hsl(202, 69%, 49%);
+}
+.container.login {
+    position: relative;
+    display: block;
+    width: 55%;
+    height: 75%;
+    top: 100px;
+    border: solid;
+    border-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 4px #aba6a6;
+    background-color: #fff;
+}
+.avatar {
+    position: relative;
+    display: flex;
+    border: solid;
+	border-radius: 100px;
+    margin-left: 40%;
+    margin-right: 40%;
+	top: 30px;
+}
+img.person {
+    position: relative;
+    display: flex;
+    height: 142px;
+}
+form.credentials {
+	position: relative;
+	display: flex;
+	flex: 1 1;
+	flex-direction: row;
+    top: 60px;
+    left: 55px;
+}
+div.secundary{
+	position: relative;
+    display: flex;
+    width: 25%;
+	flex-direction: column;
+	padding-left: 10px;
+}
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+/* button */
+@import "@material/button/mdc-button";
+button.mdc-button {
+	position: relative;
+    left: 130px;
+	top: 25px;
+	background-color: #419bd0;
 }
