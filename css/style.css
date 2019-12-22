@@ -1967,7 +1967,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
     background-color: hsl(202, 69%, 49%);
 }
-.container.login {
+.container.register {
     position: relative;
     display: block;
     width: 55%;
@@ -1979,7 +1979,7 @@ html, body {
     box-shadow: 0 0 20px 4px #aba6a6;
     background-color: #fff;
 }
-.avatar {
+.avatar2 {
     position: relative;
     display: flex;
     border: solid;
@@ -1988,12 +1988,12 @@ html, body {
     margin-right: 40%;
 	top: 30px;
 }
-img.person {
+img.person2 {
     position: relative;
     display: flex;
     height: 142px;
 }
-form.credentials {
+form.credentials2 {
 	position: relative;
 	display: flex;
 	flex: 1 1;
@@ -2101,7 +2101,7 @@ input:focus ~ .highlight {
 }
 /* button */
 @import "@material/button/mdc-button";
-button.mdc-button {
+button.mdc-button2 {
 	position: relative;
     left: 130px;
 	top: 25px;
